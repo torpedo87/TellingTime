@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48A883F520FB3D5600D553D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A883F420FB3D5600D553D7 /* AppDelegate.swift */; };
+		48A883FC20FB3D5900D553D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A883FB20FB3D5900D553D7 /* Assets.xcassets */; };
+		48A883FF20FB3D5900D553D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A883FD20FB3D5900D553D7 /* LaunchScreen.storyboard */; };
+		48A8840720FB3D9200D553D7 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8840620FB3D9200D553D7 /* ClockView.swift */; };
+		48A8840920FB40B100D553D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8840820FB40B100D553D7 /* MainViewController.swift */; };
+		EAB5DE09471689ABE0A9F4F8 /* Pods_TellingTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038D537C131E255D487950B8 /* Pods_TellingTime.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		038D537C131E255D487950B8 /* Pods_TellingTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TellingTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A883F120FB3D5600D553D7 /* TellingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A883F420FB3D5600D553D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48A883FB20FB3D5900D553D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48A883FE20FB3D5900D553D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48A8840020FB3D5900D553D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A8840620FB3D9200D553D7 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		48A8840820FB40B100D553D7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		948B6B60392EC30651925F38 /* Pods-TellingTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TellingTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-TellingTime/Pods-TellingTime.release.xcconfig"; sourceTree = "<group>"; };
+		D86318306068B0E40685F6BB /* Pods-TellingTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TellingTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TellingTime/Pods-TellingTime.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48A883EE20FB3D5600D553D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB5DE09471689ABE0A9F4F8 /* Pods_TellingTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F203541FA950249BD0D502C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D86318306068B0E40685F6BB /* Pods-TellingTime.debug.xcconfig */,
+				948B6B60392EC30651925F38 /* Pods-TellingTime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FB81CFA3C6C715F87CC70DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				038D537C131E255D487950B8 /* Pods_TellingTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48A883E820FB3D5600D553D7 = {
+			isa = PBXGroup;
+			children = (
+				48A883F320FB3D5600D553D7 /* TellingTime */,
+				48A883F220FB3D5600D553D7 /* Products */,
+				2F203541FA950249BD0D502C /* Pods */,
+				3FB81CFA3C6C715F87CC70DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48A883F220FB3D5600D553D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48A883F120FB3D5600D553D7 /* TellingTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48A883F320FB3D5600D553D7 /* TellingTime */ = {
+			isa = PBXGroup;
+			children = (
+				48A883F420FB3D5600D553D7 /* AppDelegate.swift */,
+				48A883FB20FB3D5900D553D7 /* Assets.xcassets */,
+				48A883FD20FB3D5900D553D7 /* LaunchScreen.storyboard */,
+				48A8840020FB3D5900D553D7 /* Info.plist */,
+				48A8840620FB3D9200D553D7 /* ClockView.swift */,
+				48A8840820FB40B100D553D7 /* MainViewController.swift */,
+			);
+			path = TellingTime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48A883F020FB3D5600D553D7 /* TellingTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A8840320FB3D5900D553D7 /* Build configuration list for PBXNativeTarget "TellingTime" */;
+			buildPhases = (
+				DCC27BE6F9C047B6C25AEC76 /* [CP] Check Pods Manifest.lock */,
+				48A883ED20FB3D5600D553D7 /* Sources */,
+				48A883EE20FB3D5600D553D7 /* Frameworks */,
+				48A883EF20FB3D5600D553D7 /* Resources */,
+				003D2819AE3A645D2E05A9BB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TellingTime;
+			productName = TellingTime;
+			productReference = 48A883F120FB3D5600D553D7 /* TellingTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48A883E920FB3D5600D553D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = samchon;
+				TargetAttributes = {
+					48A883F020FB3D5600D553D7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 48A883EC20FB3D5600D553D7 /* Build configuration list for PBXProject "TellingTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48A883E820FB3D5600D553D7;
+			productRefGroup = 48A883F220FB3D5600D553D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48A883F020FB3D5600D553D7 /* TellingTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48A883EF20FB3D5600D553D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A883FF20FB3D5900D553D7 /* LaunchScreen.storyboard in Resources */,
+				48A883FC20FB3D5900D553D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003D2819AE3A645D2E05A9BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TellingTime/Pods-TellingTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TellingTime/Pods-TellingTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC27BE6F9C047B6C25AEC76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TellingTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48A883ED20FB3D5600D553D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A8840920FB40B100D553D7 /* MainViewController.swift in Sources */,
+				48A8840720FB3D9200D553D7 /* ClockView.swift in Sources */,
+				48A883F520FB3D5600D553D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48A883FD20FB3D5900D553D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48A883FE20FB3D5900D553D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48A8840120FB3D5900D553D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48A8840220FB3D5900D553D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48A8840420FB3D5900D553D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D86318306068B0E40685F6BB /* Pods-TellingTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6JJA4UC5Z;
+				INFOPLIST_FILE = TellingTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samchon.TellingTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48A8840520FB3D5900D553D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948B6B60392EC30651925F38 /* Pods-TellingTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J6JJA4UC5Z;
+				INFOPLIST_FILE = TellingTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samchon.TellingTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48A883EC20FB3D5600D553D7 /* Build configuration list for PBXProject "TellingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A8840120FB3D5900D553D7 /* Debug */,
+				48A8840220FB3D5900D553D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A8840320FB3D5900D553D7 /* Build configuration list for PBXNativeTarget "TellingTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A8840420FB3D5900D553D7 /* Debug */,
+				48A8840520FB3D5900D553D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48A883E920FB3D5600D553D7 /* Project object */;
+}

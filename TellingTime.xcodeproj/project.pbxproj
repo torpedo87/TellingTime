@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4889100C20FDFEF300A3500C /* SpeakerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889100B20FDFEF300A3500C /* SpeakerButton.swift */; };
 		48A883F520FB3D5600D553D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A883F420FB3D5600D553D7 /* AppDelegate.swift */; };
 		48A883FC20FB3D5900D553D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A883FB20FB3D5900D553D7 /* Assets.xcassets */; };
 		48A883FF20FB3D5900D553D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A883FD20FB3D5900D553D7 /* LaunchScreen.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		038D537C131E255D487950B8 /* Pods_TellingTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TellingTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4889100B20FDFEF300A3500C /* SpeakerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerButton.swift; sourceTree = "<group>"; };
 		48A883F120FB3D5600D553D7 /* TellingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A883F420FB3D5600D553D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A883FB20FB3D5900D553D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +59,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4889100920FDFE9E00A3500C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48A8840620FB3D9200D553D7 /* ClockView.swift */,
+				4889100B20FDFEF300A3500C /* SpeakerButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4889100A20FDFEAF00A3500C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48A8840820FB40B100D553D7 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		48A883E820FB3D5600D553D7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,12 +97,12 @@
 		48A883F320FB3D5600D553D7 /* TellingTime */ = {
 			isa = PBXGroup;
 			children = (
+				4889100A20FDFEAF00A3500C /* Controller */,
+				4889100920FDFE9E00A3500C /* View */,
 				48A883F420FB3D5600D553D7 /* AppDelegate.swift */,
 				48A883FB20FB3D5900D553D7 /* Assets.xcassets */,
 				48A883FD20FB3D5900D553D7 /* LaunchScreen.storyboard */,
 				48A8840020FB3D5900D553D7 /* Info.plist */,
-				48A8840620FB3D9200D553D7 /* ClockView.swift */,
-				48A8840820FB40B100D553D7 /* MainViewController.swift */,
 			);
 			path = TellingTime;
 			sourceTree = "<group>";
@@ -200,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A8840920FB40B100D553D7 /* MainViewController.swift in Sources */,
+				4889100C20FDFEF300A3500C /* SpeakerButton.swift in Sources */,
 				48A8840720FB3D9200D553D7 /* ClockView.swift in Sources */,
 				48A883F520FB3D5600D553D7 /* AppDelegate.swift in Sources */,
 			);

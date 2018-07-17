@@ -10,7 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
   
-  var clockView = ClockView()
+  lazy var clockView = ClockView()
+  lazy var speakerButton = SpeakerButton()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,6 +21,7 @@ class MainViewController: UIViewController {
   func setupView() {
     view.backgroundColor = .white
     view.addSubview(clockView)
+    view.addSubview(speakerButton)
     
     clockView.snp.makeConstraints {
       $0.width.equalTo(UIScreen.main.bounds.width - 50)
@@ -27,5 +29,10 @@ class MainViewController: UIViewController {
       $0.center.equalToSuperview()
     }
     
+    speakerButton.snp.makeConstraints {
+      $0.width.height.equalTo(100)
+      $0.top.equalTo(clockView.snp.bottom).offset(50)
+      $0.centerX.equalToSuperview()
+    }
   }
 }

@@ -12,6 +12,7 @@ class ClockView: UIView {
   
   var dial = CAShapeLayer()
   var pointer = CAShapeLayer()
+  var numberLayer = CAShapeLayer()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -24,19 +25,25 @@ class ClockView: UIView {
   
   private func setup() {
     layer.addSublayer(dial)
+    layer.addSublayer(numberLayer)
     layer.addSublayer(pointer)
+    
     dial.strokeColor = UIColor.black.cgColor
     dial.fillColor = UIColor.white.cgColor
     dial.shadowColor = UIColor.gray.cgColor
     dial.shadowOpacity = 0.7
     dial.shadowRadius = 8
     dial.shadowOffset = CGSize.zero
+    
+    //numberLayer.backgroundColor = UIColor.green.cgColor
   }
   
   override func layoutSubviews() {
     super.layoutSubviews()
     let dialPath = UIBezierPath(ovalIn: bounds)
     dial.path = dialPath.cgPath
+    
+    drawNumbers()
     
     let arrow = buildArrow(width: 10, length: bounds.midX - 20, depth: 20)
     pointer.path = arrow.cgPath
@@ -67,5 +74,36 @@ class ClockView: UIView {
     path.addLine(to: endPoint)
     
     return path
+  }
+  
+  private func drawNumbers() {
+    numberLayer.bounds = bounds
+    let center = CGPoint(x: bounds.midX, y: bounds.midY)
+    numberLayer.position = center
+    
+    let renderer = UIGraphicsImageRenderer(size: bounds.size)
+    let image = renderer.image { canvas in
+      //draw numbers
+      let context = canvas.cgContext
+      
+      for number in 1...12 {
+        context.translateBy(x: center.x, y: center.y)
+        context.rotate(by: CGFloat.pi * 2 / 12)
+        context.translateBy(x: -center.x, y: -center.y)
+        //UIColor.blue.setFill()
+        //context.fill(bounds)
+        draw(number: number)
+      }
+      
+    }
+    
+    numberLayer.contents = image.cgImage
+  }
+  
+  func draw(number: Int) {
+    let string = "\(number)" as NSString
+    let attributes = [NSAttributedString.Key.font: UIFont(name: "Avenir-Heavy", size: 18)!]
+    let size = string.size(withAttributes: attributes)
+    string.draw(at: CGPoint(x: bounds.width/2 - size.width/2, y: 10), withAttributes: attributes)
   }
 }

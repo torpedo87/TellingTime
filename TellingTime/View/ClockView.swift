@@ -13,6 +13,8 @@ class ClockView: UIView {
   var dial = CAShapeLayer()
   var pointer = CAShapeLayer()
   var numberLayer = CAShapeLayer()
+  var time = -CGFloat.pi / 2
+  var startAngle: CGFloat = 0
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -35,7 +37,9 @@ class ClockView: UIView {
     dial.shadowRadius = 8
     dial.shadowOffset = CGSize.zero
     
-    //numberLayer.backgroundColor = UIColor.green.cgColor
+    let pan = UIPanGestureRecognizer(target: self,
+                                     action: #selector (handlePan(recognizer:)))
+    addGestureRecognizer(pan)
   }
   
   override func layoutSubviews() {
@@ -51,14 +55,6 @@ class ClockView: UIView {
     pointer.position = CGPoint(x: bounds.midX, y: bounds.midY)
     pointer.lineWidth = 4
     pointer.lineCap = CAShapeLayerLineCap.round
-    
-    //keyPath에 의해 어떤 애니메이션이 결정됨
-    let animation = CABasicAnimation(keyPath: "transform.rotation.z")
-    animation.duration = 60
-    animation.fromValue = 0
-    animation.toValue = Float.pi * 2
-    animation.repeatCount = .greatestFiniteMagnitude
-    pointer.add(animation, forKey: "time")
   }
   
   private func buildArrow(width: CGFloat, length: CGFloat, depth: CGFloat) -> UIBezierPath {
@@ -90,8 +86,6 @@ class ClockView: UIView {
         context.translateBy(x: center.x, y: center.y)
         context.rotate(by: CGFloat.pi * 2 / 12)
         context.translateBy(x: -center.x, y: -center.y)
-        //UIColor.blue.setFill()
-        //context.fill(bounds)
         draw(number: number)
       }
       
@@ -105,5 +99,30 @@ class ClockView: UIView {
     let attributes = [NSAttributedString.Key.font: UIFont(name: "Avenir-Heavy", size: 18)!]
     let size = string.size(withAttributes: attributes)
     string.draw(at: CGPoint(x: bounds.width/2 - size.width/2, y: 10), withAttributes: attributes)
+  }
+  
+  @objc func handlePan(recognizer: UIPanGestureRecognizer) {
+    if let view = recognizer.view {
+      let angle = getAngle(location: recognizer.location(in: view))
+      rotate(to: angle)
+    }
+  }
+  
+  private func getAngle(location: CGPoint) -> CGFloat {
+    let deltaX = location.x - bounds.midX
+    let deltaY = location.y - bounds.midY
+    let angle = 180 - atan2(deltaX, deltaY) * 180 / .pi
+    return angle * .pi / 180
+  }
+  
+  func rotate(to: CGFloat) {
+    let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+    animation.duration = 0
+    animation.fromValue = startAngle
+    animation.toValue = to
+    animation.repeatCount = 0
+    startAngle = to
+    pointer.transform = CATransform3DMakeRotation(to, 0, 0, 1)
+    pointer.add(animation, forKey: "time")
   }
 }
